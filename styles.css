@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root{
+    /* Primary */
+    --clr-soft-orange: hsl(35, 77%, 62%);
+    --clr-soft-red: hsl(5, 85%, 63%);
+    /* Neutral */
+    --clr-off-white: hsl(36, 100%, 99%);
+    --clr-grayish-blue: hsl(233, 8%, 79%);
+    --clr-dark-grayish-blue: hsl(236, 13%, 42%);
+    --clr-vd-grayish-blue: hsl(240, 100%, 5%);
+
+    --font-size: 15px;
+    --font-family: 'Inter', sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-800: 800;
+}
+
+/* GENERAL */
+body{
+    font-family: var(--font-family);
+    padding-inline: 8vw;
+    padding-top: 4vw;
+    padding-bottom: 6vw;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.header-menu ul{
+    padding: 0;
+    margin: 0;
+}
+.header-menu ul a{
+    text-decoration: none;
+    color: var(--clr-dark-grayish-blue);
+    margin-left: 1.75rem;
+    font-size: 1.2rem;
+}
+
+/* MAIN SECTION */
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+/* <-----LEFT SECTION */
+.left{
+    
+}
+.left-bottom{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.left-bl{
+    width: 50%;
+}
+.left-bl h1{
+    font-weight: var(--fw-800);
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.left-br{
+    width: 50%;
+}
+.left-br p{
+    font-size: 1rem;
+    color: var(--clr-dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+.btn{
+    border-style: none;
+    width: 50%;
+    height: 25%;
+    font-size: 0.75rem;
+    background-color: var(--clr-soft-red);
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* ----->RIGHT SECTION */
+.right{
+    width: 1/3;
+    padding: 1rem;
+    background-color: black;
+}
+.right h1{
+    color: var(--clr-soft-orange);
+    font-weight: var(--fw-700);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.right-new-container:first-of-type{
+    margin-bottom: 1rem;
+}
+.right-new-container p{
+    color: var(--clr-dark-grayish-blue);
+}
+.right-new-container a{
+    color: var(--clr-off-white);
+    font-weight: var(--fw-700);
+}
+.right-new-container a:hover{
+    color: var(--clr-soft-orange);
+    cursor: pointer;
+}
